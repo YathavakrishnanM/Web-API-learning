@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroCardApplication</title>
+    <link rel="StyleSheet" href="Style/Style.css">
+    <script src="Script/TypeScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- header portion -->
+    <div id="header">
+        <h1>MetroCard Management System</h1>
+    </div>
+
+    <!-- mainpage -->
+    <div id="main_page">
+        <div id="main_page_content">
+            <button onclick="registrationPage()">New user</button>
+            <button onclick="loginpage()">ExistingUser</button>
+        </div>
+    </div>
+
+    <!-- newuser registration page -->
+
+    <div id="newregistration_page">
+        <div id="newregistration_page_content">
+            <div id="signin_page">
+                <h2>Sign up</h2>
+                <label id="label_username">UserName</label><br>
+                <input id="user_name" type="text" placeholder="UserName"><br> <br>
+    
+                <label id="lebel_phonenumber">PhoneNumber</label><br>
+                <input id="phoneNumber" type="text" placeholder="PhoneNumber" ><br><br>
+    
+                <label id="label_balance">Balance</label><br>
+                <input id="balance" type="text" placeholder="Balance"><br>
+
+                <button id="submit" onclick="registrationSubmit()" >Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- login user -->
+
+    <div id="userlogin_page">
+        <div id="login_page_content">
+            <div id="login_page">
+                <h2>Log in</h2>
+                <label id="label_cardNumber">Card Number</label><br>
+                <input id="card_number" type="text" placeholder="CardNumber"><br> <br>
+                <button id="submit" onclick="login()" >Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- login inside page -->
+    <div id="login_inside_page">
+            <div id="top_portion">
+                <button onclick="balancePage()">Balance</button>
+                <button>Recharge</button>
+                <button>ViewTravelHistory</button>
+                <button>Travel</button>
+                <button>Exit</button>
+            </div>
+            <div id="bottom_portion">
+                <div id="balance_Page"></div>
+                <div id="Recharge_page"></div>
+                <div id="ViewTravelHistory_page"></div>
+                <div id="travel"></div>
+            </div>
+    </div>
+
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    
+</body>
+</html>

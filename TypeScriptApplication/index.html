@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Application</title>
+    <link rel="Stylesheet" href="Style/Style.css">
+    <script src="script.js">
+       
+    </script>
+</head>
+<body>
+    <div id="body1">
+    <div id="page1">
+        <button onclick="newUserEntry()">New user</button>
+        <button onclick="login()">Existing user</button>
+    </div> 
+    <div class="main">
+        <div class="left ">
+            <h3>Sign up</h3>
+            <form id="form">
+                <label id="label_email">Email</label><br>
+                <input id="email" type="text" placeholder="Email" onchange="validate()"><br> <br>
+            
+                <label id="label_password">Password</label><br>
+                <input id="password" type="password" placeholder="Password" onchange="passwordValidate()"><br><br>
+            
+                <label id="label_conformpassword">Conform Password</label><br>
+                <input id="Conformpassword" type="password" placeholder="Conform Password" onchange="conformValidate()"><br>
+            
+                <label id="label_phone">Phone</label><br>
+                <input id="phonenumber" type="text" min="10" max="10" placeholder="Phone number" onchange="phoneNum()"><br>
+                <input id="submit" type="submit" onclick="newuserSubmit()">Submit</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Sign in</h3>
+
+            <label id="label_email1">Email</label><br>
+            <input id="email1" type="text" placeholder="Email" onchange="validate1()"><br> <br>
+
+            <label id="label_password1">Password</label><br>
+            <input id="password1" type="password" placeholder="Password" onchange="passwordValidate1()" ><br><br>
+            <button id="submit" onclick="signin()" >log in</button>
+
+        </div>
+    </div>
+    </div>
+
+    <div id="login_page">
+        <div id="header">
+            <button onclick="showMedicineDetail()">Madicine details</button>
+            <button onclick="purchase()">Purchase</button>
+            <button onclick="cancelOrder()">Cancel</button>
+            <button onclick="RechargePage()">Recharge Wallet</button>
+            <button onclick="showBalace()">Show balance</button>
+            <button onclick="orderHistory()"> order history</button>
+            <button onclick="backToMainPage()">logout</button>
+        </div>
+
+        <button id="addButton" onclick="addmedicine()">Add</button>
+        <table id="Medicinetable">
+           
+        </table>
+
+        <table id="OrderTable">
+           
+        </table>
+
+        
+        <table id="purchaseTable">
+            
+        </table>
+        <div id="purchaseCount">
+            <input id="UserEntercount" type="number" placeholder="enter the count">
+            <button onclick="Conform_purchase()">Conform_purchase</button>
+        </div>
+
+        <div id="addDiv">
+            <label for="newMadineName">newMadineName</label>
+            <input id="newMadineName" type="text" placeholder="Enter madicinename" name="newMadineName"><br>
+
+            <label for="newMedicinePrice">newMadinePrice</label>
+            <input id="newMadinePrice" name="newMadinePrice" type="number" placeholder="Price"><br>
+
+            <label for="newMedicineCount">newMedicineCount</label>
+            <input id="newMedicineCount" name="newMedicineCount" placeholder="Count" type="number"><br>
+
+            <label for="newMadicineExpary">newMadicineExpary</label>
+            <input id="newMadicineExpary" name="newMadicineExpary" placeholder="Expary date" type="date"><br><br>
+            
+            <button onclick="addtomedicine()">submit</button>
+
+        </div>
+
+        <div id="editData">
+            <label for="newMadineName">newMadineName</label>
+            <input id="EditName" type="text" placeholder="Enter madicinename" name="newMadineName"><br>
+
+            <label for="newMedicinePrice">newMadinePrice</label>
+            <input id="EditPrice" name="newMadinePrice" type="number" placeholder="Price"><br>
+
+            <label for="newMedicineCount">newMedicineCount</label>
+            <input id="editCount" name="newMedicineCount" placeholder="Count" type="number"><br>
+
+            <label for="newMadicineExpary">newMadicineExpary</label>
+            <input id="editExpartDate" name="newMadicineExpary" placeholder="Expary date" type="date"><br><br>
+            
+            <button onclick="Conform_editData()">submit</button>
+
+        </div>
+
+        <div id="rechargeDiv">
+            <input id="recharge_amount" type="number" placeholder="enter the amount">
+            <button onclick="Recharge()">Recharge</button>
+        </div>
+    </div>
+</body>
+</html>
