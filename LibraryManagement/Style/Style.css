@@ -1,0 +1,139 @@
+body{
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* open page */
+
+#open_page
+{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+#open_page button{
+    height:2rem;
+    width: 10%;
+    margin-left: 1rem;
+}
+
+
+/* register page */
+
+#register_page{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;
+}
+
+#register_page_content{
+    height: 30rem;
+    width: 50%;
+}
+
+#register_page_content input,#register_page_content select,#register_page_content button{
+ height: 2rem;
+ margin-top: 0.5rem;
+}
+
+/* login page */
+
+#login_page{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;
+}
+
+#login_page input,#login_page button{
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* login_inside_page */
+
+#login_inside_page{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;
+}
+
+#top{
+    height: 20%;
+    text-align: center;
+}
+
+#top button{
+    height: 2rem;
+    width: 15%;
+    margin-left: 1rem;
+    box-shadow: 5px 5px 5px rgb(67, 67, 67);
+}
+#top button:hover{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+#bottom{
+    height: 80%;
+    border: 1px solid black;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#borrow_page{
+    height: 100%;
+    display: none;
+}
+#history_page{
+    height: 100%;
+    display: none;
+}
+#return_page{
+    height: 100%;
+    display: none;
+}
+#walletrecharge_page{
+    height: 100%;
+    display: none;
+}
+table{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+}
+tr td{
+    height: 1rem;
+    width: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#purchase_book{
+    height: 100%;
+    display: none;
+}
+#purchase_book input,#purchase_book button{
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+

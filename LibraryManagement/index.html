@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <script type="text/javascript" src="TS/index.js"></script>
+</head>
+<body>
+    <div id="open_page">
+        <button onclick="registerPage()">Register</button>
+        <button onclick="loginpage()">Login</button>
+    </div>
+
+
+    <div id="register_page">
+        <h2>Register Page</h2>
+        <div id="register_page_content">
+
+            <label>UserName</label>
+            <input id="user_name"  type="text" placeholder="UserName"><br>
+
+            <label>Gender</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="notdisclose">Not disclose</option>
+            </select><br>
+
+            <label>Department</label>
+            <select id="department">
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CSC">CSC</option>
+            </select><br>
+
+            <label>MobileNumber</label>
+            <input id="mobile_number"  type="text" placeholder="MobileNumber"><br>
+
+            <label>MailID</label>
+            <input id="mailId"  type="text" placeholder="MailID"><br>
+
+            <label>Wallet balance</label>
+            <input id="wallet_balance"  type="text" placeholder="Wallet balance"><br>
+
+            <label>Password</label>
+            <input id="pass"  type="text" placeholder="Password"><br>
+
+            <button onclick="conformRegistration()">Submit</button>
+
+        </div>
+    </div>
+
+
+    <div id="login_page">
+            <label>UserID</label>
+            <input id="email_ID"  type="text" placeholder="Email"><br>
+
+            <label>Password</label>
+            <input id="pass_word"  type="password" placeholder="Password"><br>
+            <button onclick="login()">Submit</button>
+    </div>
+
+    <div id="login_inside_page">
+            <div id="top">
+                <button onclick="borrowPage()">Borrowbook</button>
+                <button onclick="showHistory()">ShowBorrowedhistory</button>
+                <button onclick="returnPage()">ReturnBooks</button>
+                <button onclick="walletRechargePage()">WalletRecharge</button>
+                <button onclick="logout()">Exit</button>
+            </div>
+            <div id="bottom">
+                    <div id="borrow_page">
+                        <table id="borrow_table">
+
+                        </table>
+                    </div>
+                    <div id="history_page">
+                        <table id="history_table">
+
+                        </table>
+                    </div>
+                    <div id="return_page">
+
+                    </div>
+                    <div id="walletrecharge_page">
+                            <input id="amount" type="text" placeholder="Enter the amount">
+                            <button onclick="rechargeWallet()">recharge</button>
+                    </div>
+                    <div id="purchase_book">
+                            <input type="text" placeholder="Enter the count" ><br>
+                            <button onclick="conform_purchase()">purchase</button>
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
+
