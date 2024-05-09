@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery management</title>
+    <link rel="stylesheet" href="Style/Style.CSS">
+    <script type="text/javaScript" src="Script/index.js"></script>
+</head>
+<body>
+    <div id="main_page">
+            <button onclick="toRegisterPage()">
+                    Registration
+            </button>
+            <button onclick="toLoginPage()">
+                    login
+            </button>
+    </div>
+
+    <div id="register_Page">
+        
+        <label>UserName</label>
+        <input id="username" type="text" placeholder="UserName"><br>
+
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Email"><br>
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Password"><br>
+
+        <label>WalletBalance</label>
+        <input id="balance" type="text" placeholder="Amount"><br>
+
+        <label>Contact</label>
+        <input id="phoneNumber" type="text" placeholder="PhoneNumber"><br>
+
+        <label>Address</label>
+        <textarea id="address" placeholder="Address"></textarea><br><br>
+
+        <label>Photo</label>
+        <input id="photo" type="file" required><br>
+
+        <button onclick="registration()">Submit</button>
+    </div>
+
+    <div id="login_page">
+        <label>Email</label>
+        <input id="user_enter_email" type="email" placeholder="Email"><br>
+
+        <label>Password</label>
+        <input id="user_enster_password" type="password" placeholder="Password"><br>
+
+        <button onclick="login()">login</button>
+    </div>
+
+
+    <div id="inside_mainpage">
+        <div id="top_content">
+            <button onclick="homepage()">Home</button>
+            <button onclick="walletbalancepage()">WalletBalance</button>
+            <button onclick="walletrechargepage()">Walletrecharge</button>
+            <button onclick="purchase()">Purchase</button>
+            <button onclick="addproductpage()">Add product</button>
+            <button onclick="grocerypage()">Grocery items</button>
+            <button onclick="cardPage()">Card</button>
+            <button onclick="orderHistorypage()">View order history</button>
+            <button onclick="signoutpage()">SignOut</button>
+
+        </div>
+        <div id="bottom_content">
+                <div id="home_content">
+                    
+                </div>
+                <div id="WalletBalance_content">
+
+                </div>
+                <div id="Walletrecharge_content">
+                    <input id="amount" placeholder="Enter the amount">
+                    <button onclick="conformRecharge()">recharge</button>
+                </div>
+                <div id="Purchase_content">Purchase_content</div>
+
+
+
+                <div id="Addproduct_content"> 
+                    
+                    <label>ItemName</label>
+                    <input id="itemname" type="text" placeholder="ItemName"><br>
+            
+                    <label>Quantity</label>
+                    <input id="quantity" type="text" placeholder="Quantity"><br>
+            
+                    <label>Price</label>
+                    <input id="price" type="text" placeholder="Price"><br>
+            
+                    <label>PurchaseDate</label>
+                    <input id="purchaseDate" type="date"><br>
+            
+                    <label>ExparyDate</label>
+                    <input id="exparyDate" type="date"><br>
+            
+                    <label>ItemPhoto</label>
+                    <input id="itemPhoto" type="file"><br><br>
+            
+                  
+                    <button onclick="addproduct()">Submit</button>
+                </div>
+                <div id="Grocery_items_content">
+                    <table id="grocerytable">
+
+                    </table>
+                </div>
+                <div id="Card_content">Card_content</div>
+                <div id="View_order_history_content">View_order_history_content</div>
+                <div id="SignOut">SignOut</div>
+        </div>
+
+    </div>
+</body>
+</html>

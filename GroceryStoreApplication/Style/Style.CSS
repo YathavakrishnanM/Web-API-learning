@@ -1,0 +1,113 @@
+body{
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#main_page{
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+button{
+    height: 2rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+#register_Page{
+    height: 100%;
+    border: 2px solid black;
+    display: none;
+   
+}
+
+input{
+    height: 2rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#login_page{
+    height: 100%;
+    border: 2px solid black;
+    display: none;
+}
+
+#inside_mainpage{
+    height: 100%;
+    border: 2px solid black;
+    display: none;
+}
+
+#top_content{
+    height: 10%;
+    text-align: center;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+#top_content button{
+    height: 2rem;
+    width: 8rem;
+    margin-left: 1rem;
+}
+
+
+#bottom_content{
+    height: 90%;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#home_content{
+    height: 100%;
+    display: none;
+}
+#WalletBalance_content{
+    height: 100%;
+    display: none;
+}
+#Walletrecharge_content{
+    height: 100%;
+    display: none;
+}
+#Purchase_content{
+    height: 100%;
+    display: none;
+}
+#Addproduct_content{
+    height: 100%;
+    display: none;
+}
+#Grocery_items_content{
+    height: 100%;
+    display: none;
+}
+#Card_content{
+    height: 100%;
+    display: none;
+}
+#View_order_history_content{
+    height: 100%;
+    display: none;
+}
+#SignOut{
+    height: 100%;
+    display: none;
+}
+table{
+    height: auto;
+    width: auto;
+}
+
+tr td{
+    height: 2rem;
+    width: 3rem;
+}
